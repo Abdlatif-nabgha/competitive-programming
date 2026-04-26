@@ -11,20 +11,12 @@ public class Main {
 
         while (t-- > 0) {
             int n = scanner.nextInt();
-            int move = 0;
-            while (move < 10 ) {
-                if (move % 2 == 0) {
-                    if ((n-1)%3 == 0 || (n+1)%3 == 0) {
-                         sb.append("First").append("\n");
-                         break;
-                    }
-                    n = n-1;
-                }else {
-                    n = n+1;
-                }
-                move++;
+
+            if (n % 3 == 0) {
+                sb.append("Second").append("\n");
+            } else {
+                sb.append("First").append("\n");
             }
-            if (move == 10) sb.append("Second").append("\n");
         }
 
         System.out.print(sb);
