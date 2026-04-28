@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Binary {
     public static void main(String[] args) {
-        try (Scanner scanner = new Scanner(System.in)) {
+        Scanner scanner = new Scanner(System.in);
             int n = scanner.nextInt();
 
             StringBuilder binary = new StringBuilder();
@@ -26,5 +26,6 @@ public class Binary {
             prod *= 2;
         }
         System.out.println(binaryToInt);
-    }
+    }   
 }
+
